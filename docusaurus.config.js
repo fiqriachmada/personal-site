@@ -8,9 +8,9 @@
  */
 
 module.exports = {
-  title: 'My Site',
+  title: 'Welcome to my Portfolio Site',
   tagline: 'The tagline of my site',
-  url: 'https://your-docusaurus-test-site.com',
+  url: 'https://fiqriachmadadocusite.netlify.app/',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   favicon: 'img/favicon.ico',
