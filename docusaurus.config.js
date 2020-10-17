@@ -9,31 +9,31 @@
 
 module.exports = {
   title: 'Welcome to my Portfolio Site',
-  tagline: 'The tagline of my site',
+  tagline: 'Achmada Fiqri Portfolio',
   url: 'https://fiqriachmadadocusite.netlify.app/',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   favicon: 'img/favicon.ico',
-  organizationName: 'facebook', // Usually your GitHub org/user name.
+  organizationName: 'fiqriachmada', // Usually your GitHub org/user name.
   projectName: 'docusaurus', // Usually your repo name.
   themeConfig: {
     navbar: {
-      title: 'My Facebook Project',
+      title: 'Fiqriachmada',
       logo: {
-        alt: 'My Facebook Project Logo',
+        alt: 'My Facebook Projec Logo',
         src: 'img/logo.svg',
       },
       items: [
         {
           to: 'docs/',
-          activeBasePath: 'docs',
-          label: 'Docs',
-          position: 'left',
+          activeBasePath: 'doc1',
+          label: 'About',
+          position: 'right',
         },
-        {to: 'blog', label: 'Blog', position: 'left'},
+        {href: 'https://stupidsby.blogspot.com/', label: 'Blog', position: 'right'},
         // Please keep GitHub link to the right for consistency.
         {
-          href: 'https://github.com/facebook/docusaurus',
+          href: 'https://github.com/fiqriachmada/MySiteUsingDocusaurus',
           label: 'GitHub',
           position: 'right',
         },
@@ -43,15 +43,19 @@ module.exports = {
       style: 'dark',
       links: [
         {
-          title: 'Learn',
+          title: 'Find me at',
           items: [
             {
-              label: 'Style Guide',
-              to: 'docs/',
+              label: 'Twitter',
+              to: 'https://twitter.com/fiqriachmada',
             },
             {
-              label: 'Second Doc',
-              to: 'docs/doc2',
+              label: 'Facebook',
+              to: 'https://www.facebook.com/fiqriachmada/',
+            },
+            {
+              label: 'Github',
+              to: 'https://github.com/fiqriachmada',
             },
           ],
         },
@@ -77,11 +81,11 @@ module.exports = {
           items: [
             {
               label: 'Blog',
-              to: 'blog',
+              href: 'https://stupidsby.blogspot.com/',
             },
             {
-              label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              label: 'GitHub Source Code',
+              href: 'https://github.com/fiqriachmada/MySiteUsingDocusaurus',
             },
           ],
         },
@@ -106,7 +110,7 @@ module.exports = {
         href: 'https://opensource.facebook.com',
       },
       // Please do not remove the credits, help to publicize Docusaurus :)
-      copyright: `Copyright © ${new Date().getFullYear()} Facebook, Inc. Built with Docusaurus.`,
+      copyright: `Build  ${new Date().getFullYear()} Facebook, Inc. Built with Docusaurus.`,
     },
   },
   presets: [

@@ -21,33 +21,54 @@ const features = [
     imageUrl: 'img/stupidsby.svg',
     description: (
       <p>
-        Sebuah blog pribadi milik Achmada Fiqri yang dijalankan dan dihostingkan menggunakan <code><a href="http://blogspot.com/">Blogspot</a></code> sejak 2014.
+        Sebuah blog pribadi milik Achmada Fiqri yang dijalankan dan dihostingkan
+        menggunakan{' '}
+        <code>
+          <a href="http://blogspot.com/">Blogspot</a>
+        </code>{' '}
+        sejak 2014.
       </p>
     ),
   },
   {
+    
     title: 'Atapponik',
+    href: 'fb.com',
     imageUrl: 'img/atapponik.svg',
-    Link: 'https://atapponik.000webhostapp.com/landingpage/',
     description: (
       <p>
-        Sebuah proyek freelance dari <code><a href="https://www.instagram.com/atapponik.id/">Atapponik Indonesia</a></code> yang dikerjakan menggunakan Wordpress dihosting dengan menggunakan <code><a href="https://id.000webhost.com/">000Webhost</a></code>.
+        Sebuah proyek freelance dari
+        <code>
+          <a href="https://www.instagram.com/atapponik.id/">
+            Atapponik Indonesia
+          </a>
+        </code>
+        yang dikerjakan menggunakan Wordpress dihosting dengan menggunakan<code><a href="https://id.000webhost.com/">000Webhost</a>
+        </code>
+        .
       </p>
     ),
   },
   {
     title: 'Personal Site',
-    imageUrl: 'img/undraw_docusaurus_react.svg',
+    imageUrl: 'img/fiqriachmada.svg',
     description: (
-      <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
-      </>
+      <p>
+        Sebuah personal site Achmada Fiqri yang dibuat menggunakan{' '}
+        <code>
+          <a href="https://tailwindcss.com/">Tailwind CSS</a>
+        </code>{' '}
+        yang dideploy menggunakan{' '}
+        <code>
+          <a href="https://github.io/">GitHub Pages</a>
+        </code>
+        .
+      </p>
     ),
   },
 ];
 
-function Feature({imageUrl, title, description}) {
+function Feature({imageUrl, title, description, href}) {
   const imgUrl = useBaseUrl(imageUrl);
   return (
     <div className={clsx('col col--4', styles.feature)}>
