@@ -17,27 +17,26 @@ import styles from './styles.module.css';
 
 const features = [
   {
-    title: 'Easy to Use',
-    imageUrl: 'img/undraw_docusaurus_mountain.svg',
+    title: 'StupidSby',
+    imageUrl: 'img/stupidsby.svg',
     description: (
-      <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
-      </>
+      <p>
+        Sebuah blog pribadi milik Achmada Fiqri yang dijalankan dan dihostingkan menggunakan <code><a href="http://blogspot.com/">Blogspot</a></code> sejak 2014.
+      </p>
     ),
   },
   {
-    title: 'Focus on What Matters',
-    imageUrl: 'img/undraw_docusaurus_tree.svg',
+    title: 'Atapponik',
+    imageUrl: 'img/atapponik.svg',
+    Link: 'https://atapponik.000webhostapp.com/landingpage/',
     description: (
-      <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
-      </>
+      <p>
+        Sebuah proyek freelance dari <code><a href="https://www.instagram.com/atapponik.id/">Atapponik Indonesia</a></code> yang dikerjakan menggunakan Wordpress dihosting dengan menggunakan <code><a href="https://id.000webhost.com/">000Webhost</a></code>.
+      </p>
     ),
   },
   {
-    title: 'Powered by React',
+    title: 'Personal Site',
     imageUrl: 'img/undraw_docusaurus_react.svg',
     description: (
       <>
@@ -57,7 +56,7 @@ function Feature({imageUrl, title, description}) {
           <img className={styles.featureImage} src={imgUrl} alt={title} />
         </div>
       )}
-      <h3>{title}</h3>
+      <h1>{title}</h1>
       <p>{description}</p>
     </div>
   );
@@ -68,7 +67,7 @@ function Home() {
   const {siteConfig = {}} = context;
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
+      title={`Hello ${siteConfig.title}`}
       description="Description will go into a meta tag in <head />">
       <header className={clsx('hero hero--primary', styles.heroBanner)}>
         <div className="container">
