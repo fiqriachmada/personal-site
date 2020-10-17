@@ -17,7 +17,7 @@ import styles from './styles.module.css';
 
 const features = [
   {
-    title: 'StupidSby',
+    title: <a href='https://stupidsby.blogspot.com/' target='blank'>StupidSby</a>,
     imageUrl: 'img/stupidsby.svg',
     description: (
       <p>
@@ -31,8 +31,7 @@ const features = [
     ),
   },
   {
-    
-    title: 'Atapponik',
+    title: <a href='https://atapponik.000webhostapp.com/landingpage/' target='blank'>Atapponik</a>,
     href: 'fb.com',
     imageUrl: 'img/atapponik.svg',
     description: (
@@ -50,7 +49,7 @@ const features = [
     ),
   },
   {
-    title: 'Personal Site',
+    title: <a href='https://fiqriachmada.github.io/' target='blank'>Personal Site</a>,
     imageUrl: 'img/fiqriachmada.svg',
     description: (
       <p>

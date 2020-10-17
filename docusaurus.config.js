@@ -18,7 +18,7 @@ module.exports = {
   projectName: 'docusaurus', // Usually your repo name.
   themeConfig: {
     navbar: {
-      title: 'Fiqriachmada',
+      title: 'fiqriachmada',
       logo: {
         alt: 'My Facebook Projec Logo',
         src: 'img/logo.svg',
@@ -110,7 +110,7 @@ module.exports = {
         href: 'https://opensource.facebook.com',
       },
       // Please do not remove the credits, help to publicize Docusaurus :)
-      copyright: `Build  ${new Date().getFullYear()} Facebook, Inc. Built with Docusaurus.`,
+      copyright: `Build ®${new Date().getFullYear()} Facebook, Inc. Built with Docusaurus.`,
     },
   },
   presets: [
