@@ -40,3 +40,5 @@ Some common defaults for linting/formatting have been set for you. If you integr
 $ yarn ci
 ```
 # MySiteUsingDocusaurus
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/8c9c76f8-1455-4842-9e8d-d9c01ecaab46/deploy-status)](https://app.netlify.com/sites/fiqriachmadadocusite/deploys)
