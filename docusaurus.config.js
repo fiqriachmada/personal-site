@@ -13,14 +13,14 @@ module.exports = {
   url: 'https://fiqriachmadadocusite.netlify.app/',
   baseUrl: '/',
   onBrokenLinks: 'throw',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/logo.svg',
   organizationName: 'fiqriachmada', // Usually your GitHub org/user name.
   projectName: 'docusaurus', // Usually your repo name.
   themeConfig: {
     navbar: {
       title: 'fiqriachmada',
       logo: {
-        alt: 'My Facebook Projec Logo',
+        alt: 'My Project Logo',
         src: 'img/logo.svg',
       },
       items: [
