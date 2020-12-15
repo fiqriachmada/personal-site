@@ -1,7 +1,7 @@
 ---
 id: doc1
-title: Biodata
-sidebar_label: Style Guide
+title: Biography
+sidebar_label: Biography
 slug: /
 ---
 

@@ -30,7 +30,11 @@ module.exports = {
           label: 'About',
           position: 'right',
         },
-        {href: 'https://stupidsby.blogspot.com/', label: 'Blog', position: 'right'},
+        {
+          href: 'https://stupidsby.blogspot.com/',
+          label: 'Blog',
+          position: 'right',
+        },
         // Please keep GitHub link to the right for consistency.
         {
           href: 'https://github.com/fiqriachmada/MySiteUsingDocusaurus',
@@ -46,6 +50,10 @@ module.exports = {
           title: 'Find me at',
           items: [
             {
+              label: 'LinkedIn',
+              to: 'https://www.linkedin.com/in/fiqriachmada',
+            },
+            {
               label: 'Twitter',
               to: 'https://twitter.com/fiqriachmada',
             },
@@ -59,23 +67,23 @@ module.exports = {
             },
           ],
         },
-        {
-          title: 'Community',
-          items: [
-            {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-            },
-            {
-              label: 'Twitter',
-              href: 'https://twitter.com/docusaurus',
-            },
-            {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
-            },
-          ],
-        },
+        // {
+        //   title: 'Community',
+        //   items: [
+        //     {
+        //       label: 'Stack Overflow',
+        //       href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+        //     },
+        //     {
+        //       label: 'Twitter',
+        //       href: 'https://twitter.com/docusaurus',
+        //     },
+        //     {
+        //       label: 'Discord',
+        //       href: 'https://discordapp.com/invite/docusaurus',
+        //     },
+        //   ],
+        // },
         {
           title: 'More',
           items: [
@@ -84,25 +92,25 @@ module.exports = {
               href: 'https://stupidsby.blogspot.com/',
             },
             {
-              label: 'GitHub Source Code',
+              label: "GitHub's Source Code",
               href: 'https://github.com/fiqriachmada/MySiteUsingDocusaurus',
             },
           ],
         },
-        {
-          title: 'Legal',
-          // Please do not remove the privacy and terms, it's a legal requirement.
-          items: [
-            {
-              label: 'Privacy',
-              href: 'https://opensource.facebook.com/legal/privacy/',
-            },
-            {
-              label: 'Terms',
-              href: 'https://opensource.facebook.com/legal/terms/',
-            },
-          ],
-        },
+        // {
+        //   title: 'Legal',
+        //   // Please do not remove the privacy and terms, it's a legal requirement.
+        //   items: [
+        //     {
+        //       label: 'Privacy',
+        //       href: 'https://opensource.facebook.com/legal/privacy/',
+        //     },
+        //     {
+        //       label: 'Terms',
+        //       href: 'https://opensource.facebook.com/legal/terms/',
+        //     },
+        //   ],
+        // },
       ],
       logo: {
         alt: 'Facebook Open Source Logo',
@@ -110,7 +118,7 @@ module.exports = {
         href: 'https://opensource.facebook.com',
       },
       // Please do not remove the credits, help to publicize Docusaurus :)
-      copyright: `Build ®${new Date().getFullYear()} Facebook, Inc. Built with Docusaurus.`,
+      copyright: `®${new Date().getFullYear()} Build with &nbsp ❤️ &nbsp using Facebook's Docusaurus.`,
     },
   },
   presets: [
