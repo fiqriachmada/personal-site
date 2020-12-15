@@ -8,7 +8,7 @@
  */
 
 module.exports = {
-  title: 'Welcome to my Portfolio Site',
+  title: 'fiqriachmada',
   tagline: 'Achmada Fiqri Portfolio',
   url: 'https://fiqriachmadadocusite.netlify.app/',
   baseUrl: '/',
