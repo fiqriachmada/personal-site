@@ -18,7 +18,6 @@ module.exports = {
   projectName: 'docusaurus', // Usually your repo name.
   themeConfig: {
     themeConfig: {
-      // ...
       colorMode: {
         // "light" | "dark"
         defaultMode: 'light',
