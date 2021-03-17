@@ -17,6 +17,42 @@ module.exports = {
   organizationName: 'fiqriachmada', // Usually your GitHub org/user name.
   projectName: 'docusaurus', // Usually your repo name.
   themeConfig: {
+    themeConfig: {
+      // ...
+      colorMode: {
+        // "light" | "dark"
+        defaultMode: 'light',
+
+        // Hides the switch in the navbar
+        // Useful if you want to support a single color mode
+        disableSwitch: false,
+
+        // Should we use the prefers-color-scheme media-query,
+        // using user system preferences, instead of the hardcoded defaultMode
+        respectPrefersColorScheme: false,
+
+        // Dark/light switch icon options
+        switchConfig: {
+          // Icon for the switch while in dark mode
+          darkIcon: '🌙',
+
+          // CSS to apply to dark icon,
+          // React inline style object
+          // see https://reactjs.org/docs/dom-elements.html#style
+          darkIconStyle: {
+            marginLeft: '2px',
+          },
+
+          // Unicode icons such as '\u2600' will work
+          // Unicode with 5 chars require brackets: '\u{1F602}'
+          lightIcon: '\u{1F602}',
+
+          lightIconStyle: {
+            marginLeft: '1px',
+          },
+        },
+      },
+    },
     navbar: {
       title: 'fiqriachmada',
       logo: {
