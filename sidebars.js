@@ -9,7 +9,12 @@
 
 module.exports = {
   someSidebar: {
-    About: ['doc1', 'doc2', 'doc3'],
-    Features: ['mdx'],
+    About: ['doc1', 
+    // 'doc2', 
+    // 'doc3'
+  ],
+    Features: [
+      // 'mdx'
+    ],
   },
 };
