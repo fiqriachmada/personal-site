@@ -9,7 +9,7 @@
 
 module.exports = {
   title: 'fiqriachmada',
-  tagline: 'Achmada Fiqri Portfolio',
+  tagline: 'Hacking with HTML',
   url: 'https://fiqriachmada.netlify.app/',
   baseUrl: '/',
   onBrokenLinks: 'throw',
