@@ -14,6 +14,13 @@
  */
 
 /* You can override the default Infima variables here. */
+@import url(//db.onlinewebfonts.com/c/4077fc58b77b7447130fb9084b7afac7?family=Maison+Neue+Red+Bull+Demi);
+@import url(//db.onlinewebfonts.com/c/8b59d4b47037b08d452d8cb659cc2d53?family=Maison+Neue+Light);
+
+p, footer {
+  font-family: 'Maison Neue Light';
+}
+
 :root {
   --ifm-color-primary: #25c2a0;
   --ifm-color-primary-dark: rgb(33, 175, 144);
@@ -23,8 +30,11 @@
   --ifm-color-primary-lighter: rgb(102, 212, 189);
   --ifm-color-primary-lightest: rgb(146, 224, 208);
   --ifm-code-font-size: 99%;
-  font-family: Circular Std, Arial, Helvetica, sans-serif;
+  /* font-family: circular, Helvetica, sans-serif;
+   */
+  font-family: 'Maison Neue Red Bull Demi';
 }
+
 
 .docusaurus-highlight-code-line {
   background-color: rgb(72, 77, 91);

@@ -8,8 +8,8 @@
  */
 
 module.exports = {
-  title: 'fiqriachmada',
-  tagline: 'Hacking with HTML',
+  title: ' ',
+  tagline: 'Welcome to My Portfolio Hacking with HTML',
   url: 'https://fiqriachmada.netlify.app/',
   baseUrl: '/',
   onBrokenLinks: 'throw',
