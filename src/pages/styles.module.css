@@ -14,9 +14,10 @@
 
 .heroBanner {
   padding: 18rem 0;
-  text-align: center;
+  text-align: left;
   position: relative;
   overflow: hidden;
+  background-image: url('https://unsplash.com/photos/iixzyDCmM2A');
 }
 
 @media screen and (max-width: 966px) {
@@ -26,7 +27,7 @@
 }
 
 .buttons {
-  display: flex;
+  display: left;
   align-items: center;
   justify-content: center;
 }

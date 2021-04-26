@@ -15,8 +15,13 @@
 
 /* You can override the default Infima variables here. */
 
-@import url('https://db.onlinewebfonts.com/c/000be6a5acfcd4e4a425e9f1bb6c80f0?family=Google+Sans');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Ubuntu:wght@500&display=swap');
 
+p, footer {
+  /* font-family: 'Maison Neue Light'; */
+  font-family: 'Open Sans', sans-serif;
+  font-weight: light;
+}
 
 :root {
   --ifm-color-primary: #25c2a0;
@@ -27,8 +32,11 @@
   --ifm-color-primary-lighter: rgb(102, 212, 189);
   --ifm-color-primary-lightest: rgb(146, 224, 208);
   --ifm-code-font-size: 99%;
-  font-family: "Google Sans";
+  /* font-family: circular, Helvetica, sans-serif;
+   */
+   font-family: 'Ubuntu', sans-serif;
 }
+
 
 .docusaurus-highlight-code-line {
   background-color: rgb(72, 77, 91);
