@@ -16,11 +16,12 @@
 /* You can override the default Infima variables here. */
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
 /* @import url(//db.onlinewebfonts.com/c/8b59d4b47037b08d452d8cb659cc2d53?family=Maison+Neue+Light); */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Ubuntu:wght@500&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Ubuntu:wght@500&display=swap'); */
+@import url('https://db.onlinewebfonts.com/c/000be6a5acfcd4e4a425e9f1bb6c80f0?family=Google+Sans');
 
 p, footer {
   /* font-family: 'Maison Neue Light'; */
-  font-family: 'Roboto', sans-serif;
+  font-family: "Google Sans";
 }
 
 :root {
@@ -32,8 +33,6 @@ p, footer {
   --ifm-color-primary-lighter: rgb(102, 212, 189);
   --ifm-color-primary-lightest: rgb(146, 224, 208);
   --ifm-code-font-size: 99%;
-  /* font-family: circular, Helvetica, sans-serif;
-   */
    font-family: 'Ubuntu', sans-serif;
 }
 
