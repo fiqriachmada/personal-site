@@ -72,7 +72,7 @@ module.exports = {
         },
         // Please keep GitHub link to the right for consistency.
         {
-          href: 'https://github.com/fiqriachmada/MySiteUsingDocusaurus',
+          href: 'https://github.com/fiqriachmada/',
           label: 'GitHub',
           position: 'right',
         },
@@ -128,7 +128,7 @@ module.exports = {
             },
             {
               label: "GitHub's Source Code",
-              href: 'https://github.com/fiqriachmada/MySiteUsingDocusaurus',
+              href: 'https://github.com/fiqriachmada/personal-site',
             },
           ],
         },

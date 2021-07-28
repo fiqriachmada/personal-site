@@ -17,7 +17,9 @@
   text-align: left;
   position: relative;
   overflow: hidden;
-  background-image: url('https://unsplash.com/photos/iixzyDCmM2A');
+  background-image: url("/img/home1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 @media screen and (max-width: 966px) {

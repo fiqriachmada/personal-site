@@ -7,6 +7,7 @@
  * @format
  */
 
+
 import React from 'react';
 import clsx from 'clsx';
 import Layout from '@theme/Layout';
@@ -16,6 +17,19 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 import styles from './styles.module.css';
 
 const features = [
+  {
+    title: <a href='https://sys01.dwiprimasentosa.com/' target='blank'>Dwi Prima Sentosa</a>,
+    imageUrl: 'img/smartone.svg',
+    description: (
+      <p>
+        Merupakan sebuah dynamic site milik Dwi Prima Sentosa yang dikerjakan oleh Smart Nusantara yang dihostingkan
+        oleh {' '}
+        <code>
+          <a href="https://sys01.dwiprimasentosa.com/">Smartone</a>
+        </code>{''}. Saya membantu sebagai developer.
+      </p>
+    ),
+  },
   {
     title: <a href='https://stupidsby.blogspot.com/' target='blank'>StupidSby</a>,
     imageUrl: 'img/stupidsby.svg',
