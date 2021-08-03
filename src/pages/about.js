@@ -6,7 +6,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 const profiles = [
   {
-    imageUrl: 'img/about.svg',
+    imageUrl: 'img/logo.svg',
     p1: (
       <p>
         Hi There, <b>Achmada Fiqri A Rasyad</b> right here, or you can call me{' '}
@@ -44,7 +44,7 @@ function Profiles({imageUrl, p1, p2, p3, p4, language}) {
   const imgUrl = useBaseUrl(imageUrl);
   return (
     <div className={clsx('col col--12')}>
-      <div className="card margin--md">
+      <div className="card margin--md shadow--md">
         {imgUrl && (
           <div className="text--center">
             <img className={styles.profileImage} src={imgUrl} loading="lazy" />
