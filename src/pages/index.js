@@ -14,7 +14,7 @@ const indexes = [
     ),
     p1: (
       <p className="avatar avatar--vertical">
-        Student at ITATS, sometimes doing code, Mobile Legends and Basketball
+        Intern at BNI and Student at ITATS, sometimes doing code, Mobile Legends and Basketball
         with ❤️. Currently based on Surabaya, Indonesia
       </p>
     ),
