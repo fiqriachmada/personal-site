@@ -92,7 +92,7 @@ function Feature({imageUrl, title, description}) {
   const imgUrl = useBaseUrl(imageUrl);
   return (
     <div className={clsx('col col--6')}>
-      <div className="card margin--md">
+      <div className="card margin--md shadow--md">
         {imgUrl && (
           <div className="text--center">
             <img className={styles.featureImage} src={imgUrl} alt={title} />
