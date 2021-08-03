@@ -55,7 +55,7 @@ function Home() {
         {indexes && indexes.length > 0 && (
           <section className={styles.indexes}>
             <div className="container">
-              <div className="card row margin--md avatar avatar--vertical">
+              <div className="card row margin--md avatar avatar--vertical shadow--md">
                 {indexes.map(({imageUrl, title, p1, p2}) => (
                   <Indexes
                     key={title}
