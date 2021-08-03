@@ -22,7 +22,8 @@
     "clsx": "^1.1.1",
     "node-modules": "^1.0.1",
     "react": "^16.8.4",
-    "react-dom": "^16.8.4"
+    "react-dom": "^16.8.4",
+    "react-transition-group": "^4.4.2"
   },
   "devDependencies": {
     "autoprefixer": "^9.8.6",

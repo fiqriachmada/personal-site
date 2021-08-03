@@ -1,38 +1,26 @@
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- *
- * @format
- */
-
-/**
- * Any CSS included here will be global. The classic template
- * bundles Infima by default. Infima is a CSS framework designed to
- * work well for content-centric websites.
- */
-
-/* You can override the default Infima variables here. */
-
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Ubuntu:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
 
-p, footer {
+footer {
   font-family: 'Open Sans', sans-serif;
-  font-weight: light;
+  font-weight: inherit;
+}
+
+footer.items {
+  padding-left: 10%;
 }
 
 :root {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: rgb(33, 175, 144);
-  --ifm-color-primary-darker: rgb(31, 165, 136);
-  --ifm-color-primary-darkest: rgb(26, 136, 112);
-  --ifm-color-primary-light: rgb(70, 203, 174);
-  --ifm-color-primary-lighter: rgb(102, 212, 189);
-  --ifm-color-primary-lightest: rgb(146, 224, 208);
+  --ifm-color-primary: #3578e5;
+  --ifm-color-primary-dark: #1d68e1;
+  --ifm-color-primary-darker: #1b62d4;
+  --ifm-color-primary-darkest: #1751af;
+  --ifm-color-primary-light: #4e89e8;
+  --ifm-color-primary-lighter: #5a91ea;
+  --ifm-color-primary-lightest: #80aaef;
   --ifm-code-font-size: 99%;
-   font-family: 'Ubuntu', sans-serif;
-   font-weight: light;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: light;
 }
 
 .docusaurus-highlight-code-line {
@@ -40,4 +28,30 @@ p, footer {
   display: block;
   margin: 0 calc(-1 * var(--ifm-pre-padding));
   padding: 0 var(--ifm-pre-padding);
+}
+
+h1.index {
+  font-size: xxx-large;
+  text-align: center;
+  margin-top: 2.5rem;
+}
+
+p.index {
+  font-size: large;
+  color: #858585;
+  text-align: center;
+  font-weight: bold;
+}
+
+p2.index {
+  font-size: small;
+  color: #858585;
+  text-align: center;
+  font-weight: bold;
+}
+
+p.about {
+  font-size: large;
+  text-align: justify;
+  /* font-weight: bolder; */
 }

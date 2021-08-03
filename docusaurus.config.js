@@ -53,33 +53,41 @@ module.exports = {
       },
     },
     navbar: {
-      title: 'fiqriachmada',
+      // style: 'default',
+      title: '',
       logo: {
         alt: 'My Project Logo',
         src: 'img/logo.svg',
       },
       items: [
         {
-          to: 'docs/',
-          activeBasePath: 'doc1',
+          to: 'projects',
+          label: 'Projects',
+          activeBasePath: 'projects',
+          position: 'right',
+        },
+        {
+          to: 'about',
           label: 'About',
+          activeBaseRegex: 'about',
           position: 'right',
         },
-        {
-          href: 'https://stupidsby.blogspot.com/',
-          label: 'Blog',
-          position: 'right',
-        },
+        // {
+        //   href: 'https://stupidsby.blogspot.com/',
+        //   label: 'Blog',
+        //   position: 'right',
+        // },
         // Please keep GitHub link to the right for consistency.
-        {
-          href: 'https://github.com/fiqriachmada/',
-          label: 'GitHub',
-          position: 'right',
-        },
+        // {
+        //   href: 'https://github.com/fiqriachmada/',
+        //   label: 'GitHub',
+        //   position: 'right',
+        // },
       ],
     },
+
     footer: {
-      style: 'dark',
+      // style: 'default',
       links: [
         {
           title: 'Find me at',
@@ -102,23 +110,6 @@ module.exports = {
             },
           ],
         },
-        // {
-        //   title: 'Community',
-        //   items: [
-        //     {
-        //       label: 'Stack Overflow',
-        //       href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-        //     },
-        //     {
-        //       label: 'Twitter',
-        //       href: 'https://twitter.com/docusaurus',
-        //     },
-        //     {
-        //       label: 'Discord',
-        //       href: 'https://discordapp.com/invite/docusaurus',
-        //     },
-        //   ],
-        // },
         {
           title: 'More',
           items: [
@@ -153,7 +144,7 @@ module.exports = {
         href: 'https://opensource.facebook.com',
       },
       // Please do not remove the credits, help to publicize Docusaurus :)
-      copyright: `®${new Date().getFullYear()} Build with &nbsp ❤️ &nbsp using Facebook's Docusaurus.`,
+      copyright: `®${new Date().getFullYear()} Build with &nbsp❤️&nbsp using Facebook's Docusaurus.`,
     },
   },
   presets: [
@@ -163,8 +154,7 @@ module.exports = {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
-          editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/',
+          editUrl: 'https://github.com/fiqriachmada/personal-site/edit/main/',
         },
         blog: {
           showReadingTime: true,

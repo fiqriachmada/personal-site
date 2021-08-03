@@ -1,137 +1,68 @@
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- *
- * @format
- */
-
-
 import React from 'react';
-import clsx from 'clsx';
 import Layout from '@theme/Layout';
-import Link from '@docusaurus/Link';
-import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
-import useBaseUrl from '@docusaurus/useBaseUrl';
+import clsx from 'clsx';
 import styles from './styles.module.css';
+import useBaseUrl from '@docusaurus/useBaseUrl';
 
-const features = [
+const indexes = [
   {
-    title: <a href='https://sys01.dwiprimasentosa.com/' target='blank'>Dwi Prima Sentosa</a>,
-    imageUrl: 'img/smartone.svg',
-    description: (
-      <p>
-        Merupakan sebuah dynamic site milik Dwi Prima Sentosa yang dikerjakan oleh Smart Nusantara yang dihostingkan
-        oleh {' '}
-        <code>
-          <a href="https://sys01.dwiprimasentosa.com/">Smartone</a>
-        </code>{''}. Saya membantu sebagai developer.
+    imageUrl: 'img/profile.svg',
+    title: (
+      <h1 className="avatar avatar--vertical">
+        Hello World! My Name's Achmada Fiqri
+      </h1>
+    ),
+    p1: (
+      <p className="avatar avatar--vertical">
+        Student at ITATS, sometimes doing code, Mobile Legends and Basketball
+        with ❤️. Currently based on Surabaya, Indonesia
       </p>
     ),
-  },
-  {
-    title: <a href='https://stupidsby.blogspot.com/' target='blank'>StupidSby</a>,
-    imageUrl: 'img/stupidsby.svg',
-    description: (
-      <p>
-        Sebuah blog pribadi milik Achmada Fiqri yang dijalankan dan dihostingkan
-        menggunakan{' '}
-        <code>
-          <a href="http://blogspot.com/">Blogspot</a>
-        </code>{' '}
-        sejak 2014.
-      </p>
-    ),
-  },
-  {
-    title: <a href='https://atapponik.000webhostapp.com/landingpage/' target='blank'>Atapponik</a>,
-    href: 'fb.com',
-    imageUrl: 'img/atapponik.svg',
-    description: (
-      <p>
-        Sebuah proyek freelance dari
-        <code>
-          <a href="https://www.instagram.com/atapponik.id/">
-            Atapponik Indonesia
-          </a>
-        </code>
-        yang dikerjakan menggunakan Wordpress dihosting dengan menggunakan<code><a href="https://id.000webhost.com/">000Webhost</a>
-        </code>
-        .
-      </p>
-    ),
-  },
-  {
-    title: <a href='https://fiqriachmada.github.io/' target='blank'>Personal Site</a>,
-    imageUrl: 'img/fiqriachmada.svg',
-    description: (
-      <p>
-        Sebuah personal site Achmada Fiqri yang dibuat menggunakan{' '}
-        <code>
-          <a href="https://tailwindcss.com/">Tailwind CSS</a>
-        </code>{' '}
-        yang dideploy menggunakan{' '}
-        <code>
-          <a href="https://github.io/">GitHub Pages</a>
-        </code>
-        .
-      </p>
+    p2: (
+      <p2 className="avatar avatar--vertical">
+        Reach me via email at
+        <a href="mailto:achmada1998@gmail.com">achmada1998@gmail.com</a>
+      </p2>
     ),
   },
 ];
 
-
-function Feature({imageUrl, title, description, href}) {
+function Indexes({imageUrl, title, p1, p2}) {
   const imgUrl = useBaseUrl(imageUrl);
   return (
-    <div className={clsx('col col--6', styles.feature)}>
+    <div className="margin--md">
       {imgUrl && (
         <div className="text--center">
-          <img className={styles.featureImage} src={imgUrl} alt={title} />
+          <a href="about">
+            <img src={imgUrl} alt={title} loading="lazy"/>
+          </a>
         </div>
       )}
-      <h1>{title}</h1>
-      <p>{description}</p>
+      <div className="">
+        <h1 className="index">{title}</h1>
+        <p className="index margin-left--sm margin-right--sm">{p1}</p>
+        <p2 className="index margin-left--sm margin-right--sm margin-top--lg">{p2}</p2>
+      </div>
     </div>
   );
 }
 
 function Home() {
-  const context = useDocusaurusContext();
-  const {siteConfig = {}} = context;
+  const judul = 'Home';
   return (
-    <Layout
-      title={`fiqriachmada ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
-        
-      <header className={clsx('hero hero--primary', styles.heroBanner)} background="https://unsplash.com/photos/iixzyDCmM2A">
-        <div className="container">
-          <h1 className="hero__title">{siteConfig.title}</h1>
-          <p1 className="hero__subtitle">{siteConfig.tagline}</p1>
-          <div className={styles.buttons}>
-            <Link
-              className={clsx(
-                'button button--outline button--secondary button--lg',
-                styles.getStarted,
-              )}
-              to={useBaseUrl('docs/')}>
-              About Me
-            </Link>
-          </div>
-        </div>
-      </header>
+    <Layout title={judul}>
       <main>
-        {features && features.length > 0 && (
-          <section className={styles.features}>
+        {indexes && indexes.length > 0 && (
+          <section className={styles.indexes}>
             <div className="container">
-              <div className="row">
-                {features.map(({title, imageUrl, description}) => (
-                  <Feature
+              <div className="card row margin--md avatar avatar--vertical">
+                {indexes.map(({imageUrl, title, p1, p2}) => (
+                  <Indexes
                     key={title}
                     title={title}
                     imageUrl={imageUrl}
-                    description={description}
+                    p1={p1}
+                    p2={p2}
                   />
                 ))}
               </div>
@@ -142,5 +73,4 @@ function Home() {
     </Layout>
   );
 }
-
 export default Home;

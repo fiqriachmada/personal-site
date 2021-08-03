@@ -12,36 +12,26 @@
  * and scoped locally.
  */
 
-.heroBanner {
-  padding: 18rem 0;
-  text-align: left;
-  position: relative;
-  overflow: hidden;
-  background-image: url("/img/home1.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-@media screen and (max-width: 966px) {
-  .heroBanner {
-    padding: 7rem;
-  }
-}
-
-.buttons {
-  display: left;
-  align-items: center;
-  justify-content: center;
-}
-
 .features {
   display: flex;
   align-items: center;
-  padding: 2rem 0;
   width: 100%;
 }
 
 .featureImage {
-  height: 450px;
-  width: 450px;
+  height: 360px;
+  width: auto;
+}
+
+.profiles {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.profileImage {
+  height: 300px;
+  width: 300px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
