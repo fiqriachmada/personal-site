@@ -6,7 +6,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 
 const profiles = [
   {
-    imageUrl: 'img/logo.svg',
+    imageUrl: 'img/about.svg',
     p1: (
       <p>
         Hi There, <b>Achmada Fiqri A Rasyad</b> right here, or you can call me{' '}
