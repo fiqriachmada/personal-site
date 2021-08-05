@@ -1,6 +1,5 @@
 import React from 'react';
 import Layout from '@theme/Layout';
-import clsx from 'clsx';
 import styles from './styles.module.css';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
@@ -8,18 +7,18 @@ const indexes = [
   {
     imageUrl: 'img/profile.svg',
     title: (
-      <h1 className="avatar avatar--vertical">
+      <h1 className="index avatar avatar--vertical">
         Hello World! My Name's Achmada Fiqri
       </h1>
     ),
     p1: (
-      <p className="avatar avatar--vertical">
+      <p className="index margin-left--sm margin-right--sm avatar avatar--vertical">
         Intern at BNI and Student at ITATS, sometimes doing code, Mobile Legends and Basketball
         with ❤️. Currently based on Surabaya, Indonesia
       </p>
     ),
     p2: (
-      <p2 className="avatar avatar--vertical">
+      <p2 className="index margin-left--sm margin-right--sm margin-top--lg avatar avatar--vertical">
         Reach me via email at
         <a href="mailto:achmada1998@gmail.com">achmada1998@gmail.com</a>
       </p2>
@@ -34,14 +33,14 @@ function Indexes({imageUrl, title, p1, p2}) {
       {imgUrl && (
         <div className="text--center">
           <a href="about">
-            <img src={imgUrl} alt={title} loading="lazy"/>
+            <img classname={styles.indexesImage} src={imgUrl} alt={title} loading="lazy"/>
           </a>
         </div>
       )}
-      <div className="">
-        <h1 className="index">{title}</h1>
-        <p className="index margin-left--sm margin-right--sm">{p1}</p>
-        <p2 className="index margin-left--sm margin-right--sm margin-top--lg">{p2}</p2>
+      <div>
+        <h1>{title}</h1>
+        <p>{p1}</p>
+        <p2>{p2}</p2>
       </div>
     </div>
   );

@@ -8,6 +8,9 @@
  */
 
 module.exports = {
+  metaName: 'google-site-verification',
+  content: 'AW4KU0bk93n6S2fA6bAL45YM4SvkBI8t8NsqDd-iEm4',
+  noIndex: true,
   title: 'fiqriachmada',
   tagline: 'Welcome to My Portfolio Hacking with HTML',
   url: 'https://fiqriachmada.netlify.app/',
