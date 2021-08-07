@@ -14,7 +14,7 @@ const indexes = [
       </p>
     ),
     p2: (
-      <p className="p2 margin-left--sm margin-right--sm margin-top--lg avatar avatar--vertical">
+      <p className="p2 margin-left--sm margin-right--sm avatar avatar--vertical">
         Reach me via email at
         <a href="mailto:achmada1998@gmail.com">achmada1998@gmail.com</a>
       </p>
