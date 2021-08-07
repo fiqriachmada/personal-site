@@ -14,7 +14,7 @@ const profiles = [
       </p>
     ),
     p2: (
-      <p className="margin-left--sm margin-right--sm">
+      <p className="">
         Currently I'm a college student at{' '}
         <b className="margin--none">
           <a href="https://itats.ac.id/">
