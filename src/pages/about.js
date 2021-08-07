@@ -33,14 +33,67 @@ const profiles = [
     language: (
       <div>
         <h1>Language</h1>
-        <p>JS{''}</p>
-        <p>JS{''}</p>
+        <p>JavaScript{''}</p>
+        <p>HTML{''}</p>
+        <p>CSS{''}</p>
+        <p>SwiftUI{''}</p>
+        <p>PHP{''}</p>
+      </div>
+    ),
+    frontend: (
+      <div>
+        <h1>Frontend</h1>
+        <p>Bootstrap{''}</p>
+        <p>Tailwind CSS{''}</p>
+        <p>ReactJS{''}</p>
+        <p>Docusaurus{''}</p>
+      </div>
+    ),
+    backend: (
+      <div>
+        <h1>Backend</h1>
+        <p>Node.js{''}</p>
+        <p>CodeIgniter{''}</p>
+      </div>
+    ),
+    tools: (
+      <div>
+        <h1>Tools and Documentation</h1>
+        <p>VSCode{''}</p>
+        <p>Github{''}</p>
+        <p>Gitlab{''}</p>
+        <p>Figma{''}</p>
+      </div>
+    ),
+    infrastructure: (
+      <div>
+        <h1>Infrastructure</h1>
+        <p>Netlify{''}</p>
+        <p>Vercel{''}</p>
+      </div>
+    ),
+    learning: (
+      <div>
+        <h1>Currently learning</h1>
+        <p>Flutter{''}</p>
       </div>
     ),
   },
 ];
 
-function Profiles({imageUrl, p1, p2, p3, p4, language}) {
+function Profiles({
+  imageUrl,
+  p1,
+  p2,
+  p3,
+  p4,
+  language,
+  frontend,
+  backend,
+  tools,
+  infrastructure,
+  learning,
+}) {
   const imgUrl = useBaseUrl(imageUrl);
   return (
     <div className={clsx('col col--12')}>
@@ -56,14 +109,12 @@ function Profiles({imageUrl, p1, p2, p3, p4, language}) {
           <p>{p3}</p>
           <p>{p4}</p>
           <div className="row">
-            <div className="col col--3">{language}</div>
-            <div className="col col--3">{language}</div>
-            <div className="col col--3">{language}</div>
-            <div className="col col--3">{language}</div>
-            <div className="col col--3">{language}</div>
-            <div className="col col--3">{language}</div>
-            <div className="col col--3">{language}</div>
-            <div className="col col--3">{language}</div>
+            <div className="col col--6">{language}</div>
+            <div className="col col--6">{frontend}</div>
+            <div className="col col--6">{backend}</div>
+            <div className="col col--6">{tools}</div>
+            <div className="col col--6">{infrastructure}</div>
+            <div className="col col--6">{learning}</div>
           </div>
         </div>
       </div>
@@ -81,16 +132,35 @@ function About() {
           <section className={styles.profiles}>
             <div className="container">
               <div className="row">
-                {profiles.map(({imageUrl, p1, p2, p3, p4, language}) => (
-                  <Profiles
-                    imageUrl={imageUrl}
-                    p1={p1}
-                    p2={p2}
-                    p3={p3}
-                    p4={p4}
-                    language={language}
-                  />
-                ))}
+                {profiles.map(
+                  ({
+                    imageUrl,
+                    p1,
+                    p2,
+                    p3,
+                    p4,
+                    language,
+                    frontend,
+                    backend,
+                    tools,
+                    infrastructure,
+                    learning,
+                  }) => (
+                    <Profiles
+                      imageUrl={imageUrl}
+                      p1={p1}
+                      p2={p2}
+                      p3={p3}
+                      p4={p4}
+                      language={language}
+                      frontend={frontend}
+                      backend={backend}
+                      tools={tools}
+                      infrastructure={infrastructure}
+                      learning={learning}
+                    />
+                  ),
+                )}
               </div>
             </div>
           </section>

@@ -1,10 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Ubuntu:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap');
 
-footer {
+/* footer {
   font-family: 'Open Sans', sans-serif;
   font-weight: inherit;
-}
+} */
 
 footer.items {
   padding-left: 10%;
@@ -19,7 +18,7 @@ footer.items {
   --ifm-color-primary-lighter: #5a91ea;
   --ifm-color-primary-lightest: #80aaef;
   --ifm-code-font-size: 99%;
-  font-family: 'Noto Sans JP', sans-serif;
+  font-family: 'Quicksand', sans-serif;
   font-weight: light;
 }
 
@@ -51,7 +50,8 @@ p2.index {
 }
 
 p.about {
-  font-size: large;
+  font-size: small;
   text-align: justify;
   /* font-weight: bolder; */
 }
+

@@ -8,7 +8,7 @@ const indexes = [
     imageUrl: 'img/profile.svg',
     title: (
       <h1 className="index avatar avatar--vertical">
-        Hello World! My Name's Achmada Fiqri
+        Hi! I'm Mada
       </h1>
     ),
     p1: (
