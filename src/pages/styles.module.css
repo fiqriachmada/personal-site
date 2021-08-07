@@ -37,8 +37,13 @@
 }
 
 .indexesImage {
-  height: 3px;
-  width: 3px;
+  height: 300px;
+  width: 300px;
   margin-top: 10px;
   margin-bottom: 10px;
+}
+
+.indexesImage:hover {
+  background-color: #858585;
+  border-radius: 180px;
 }

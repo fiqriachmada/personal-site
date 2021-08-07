@@ -6,22 +6,18 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 const indexes = [
   {
     imageUrl: 'img/profile.svg',
-    title: (
-      <h1 className="index avatar avatar--vertical">
-        Hi! I'm Mada
-      </h1>
-    ),
+    title: <h1 className="index avatar avatar--vertical">Hi! I'm Mada</h1>,
     p1: (
-      <p className="index margin-left--sm margin-right--sm avatar avatar--vertical">
-        Intern at BNI and Student at ITATS, sometimes doing code, Mobile Legends and Basketball
-        with ❤️. Currently based on Surabaya, Indonesia
+      <p className="p1 margin-left--sm margin-right--sm avatar avatar--vertical">
+        Intern at BNI and Student at ITATS, sometimes doing code, Mobile Legends
+        and Basketball with ❤️. Currently based on Surabaya, Indonesia
       </p>
     ),
     p2: (
-      <p2 className="index margin-left--sm margin-right--sm margin-top--lg avatar avatar--vertical">
+      <p className="p2 margin-left--sm margin-right--sm margin-top--lg avatar avatar--vertical">
         Reach me via email at
         <a href="mailto:achmada1998@gmail.com">achmada1998@gmail.com</a>
-      </p2>
+      </p>
     ),
   },
 ];
@@ -29,13 +25,15 @@ const indexes = [
 function Indexes({imageUrl, title, p1, p2}) {
   const imgUrl = useBaseUrl(imageUrl);
   return (
-    <div className="margin--md">
+    <div className="">
       {imgUrl && (
         <div className="text--center">
-          <a href="about">
-            <img classname={styles.indexesImage} src={imgUrl} alt={title} loading="lazy"/>
-          </a>
-        </div>
+            <a href="about" >
+              <img
+                className={styles.indexesImage} src={imgUrl} loading="lazy"
+              />
+            </a>
+          </div>
       )}
       <div>
         <h1>{title}</h1>

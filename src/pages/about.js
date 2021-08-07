@@ -8,13 +8,13 @@ const profiles = [
   {
     imageUrl: 'img/about.svg',
     p1: (
-      <p>
+      <p className="margin-left--sm margin-right--sm">
         Hi There, <b>Achmada Fiqri A Rasyad</b> right here, or you can call me{' '}
         <b>Mada</b> shortly
       </p>
     ),
     p2: (
-      <p>
+      <p className="margin-left--sm margin-right--sm">
         Currently I'm a college student at{' '}
         <b>
           <a href="https://itats.ac.id/">
@@ -24,14 +24,18 @@ const profiles = [
       </p>
     ),
     p3: (
-      <p>
+      <p className="margin-left--sm margin-right--sm">
         Sometimes I'm doing code in Web, iOS's SwiftUI, either Playing Mobile
         Legends and Basketball with ❤️ too
       </p>
     ),
-    p4: <p>Currently based on Surabaya, Indonesia</p>,
+    p4: (
+      <p className="margin-left--sm margin-right--sm">
+        Currently based on Surabaya, Indonesia
+      </p>
+    ),
     language: (
-      <div>
+      <div className="margin-left--sm margin-right--sm">
         <h1>Language</h1>
         <p>JavaScript{''}</p>
         <p>HTML{''}</p>
@@ -41,7 +45,7 @@ const profiles = [
       </div>
     ),
     frontend: (
-      <div>
+      <div className="margin-left--sm margin-right--sm">
         <h1>Frontend</h1>
         <p>Bootstrap{''}</p>
         <p>Tailwind CSS{''}</p>
@@ -50,14 +54,14 @@ const profiles = [
       </div>
     ),
     backend: (
-      <div>
+      <div className="margin-left--sm margin-right--sm">
         <h1>Backend</h1>
         <p>Node.js{''}</p>
         <p>CodeIgniter{''}</p>
       </div>
     ),
     tools: (
-      <div>
+      <div className="margin-left--sm margin-right--sm">
         <h1>Tools and Documentation</h1>
         <p>VSCode{''}</p>
         <p>Github{''}</p>
@@ -66,14 +70,14 @@ const profiles = [
       </div>
     ),
     infrastructure: (
-      <div>
+      <div className="margin-left--sm margin-right--sm">
         <h1>Infrastructure</h1>
         <p>Netlify{''}</p>
         <p>Vercel{''}</p>
       </div>
     ),
     learning: (
-      <div>
+      <div className="margin-left--sm margin-right--sm">
         <h1>Currently learning</h1>
         <p>Flutter{''}</p>
       </div>
@@ -100,7 +104,7 @@ function Profiles({
       <div className="card margin--md shadow--md">
         {imgUrl && (
           <div className="text--center">
-            <img className={styles.profileImage} src={imgUrl} loading="lazy" />
+            <img className={styles.profileImage} src={imgUrl} loading="lazy"/>
           </div>
         )}
         <div className="margin--md">

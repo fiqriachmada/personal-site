@@ -32,17 +32,17 @@ footer.items {
 h1.index {
   font-size: xxx-large;
   text-align: center;
-  margin-top: 2.5rem;
+  margin-top: 1rem;
 }
 
-p.index {
+p.p1 {
   font-size: large;
   color: #858585;
   text-align: center;
   font-weight: bold;
 }
 
-p2.index {
+p.p2 {
   font-size: small;
   /* color: #858585; */
   text-align: center;
@@ -50,8 +50,6 @@ p2.index {
 }
 
 p.about {
-  font-size: small;
   text-align: justify;
-  /* font-weight: bolder; */
+  margin-left: auto;
 }
-
