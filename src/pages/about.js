@@ -16,7 +16,7 @@ const profiles = [
     p2: (
       <p className="margin-left--sm margin-right--sm">
         Currently I'm a college student at{' '}
-        <b>
+        <b className="margin--none">
           <a href="https://itats.ac.id/">
             Institut Teknologi Adhi Tama Surabaya
           </a>
@@ -104,7 +104,7 @@ function Profiles({
       <div className="card margin--md shadow--md">
         {imgUrl && (
           <div className="text--center">
-            <img className={styles.profileImage} src={imgUrl} loading="lazy"/>
+            <img className={styles.profileImage} src={imgUrl} loading="lazy" />
           </div>
         )}
         <div className="margin--md">
