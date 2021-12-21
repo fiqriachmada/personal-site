@@ -23,6 +23,7 @@
     "node-modules": "^1.0.1",
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
+    "react-router-dom": "^6.2.1",
     "react-transition-group": "^4.4.2"
   },
   "devDependencies": {
