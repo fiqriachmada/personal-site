@@ -32,7 +32,7 @@ function Indexes({imageUrl, title, p1, p2}) {
               <img
                 className={styles.indexesImage} src={imgUrl} loading="lazy"
               />
-            </a>
+            </Link>
           </div>
       )}
       <div>
