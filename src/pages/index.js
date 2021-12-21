@@ -28,7 +28,7 @@ function Indexes({imageUrl, title, p1, p2}) {
     <div className="">
       {imgUrl && (
         <div className="text--center">
-            <a href="about" >
+            <Link to="about" >
               <img
                 className={styles.indexesImage} src={imgUrl} loading="lazy"
               />
