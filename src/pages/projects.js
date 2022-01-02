@@ -3,11 +3,12 @@ import clsx from 'clsx';
 import Layout from '@theme/Layout';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import styles from './styles.module.css';
+import { Link } from 'react-router-dom';
 
 const features = [
   {
     title: (
-      <a href="https://sys01.dwiprimasentosa.com/" target="blank">
+      <Link to="https://sys01.dwiprimasentosa.com/" target="blank">
         Dwi Prima Sentosa
       </a>
     ),
