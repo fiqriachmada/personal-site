@@ -15,9 +15,11 @@ const profiles = [
       </p>
     ),
     p2: (
-      <p className="">
+      <p className="margin-left--sm margin-right--sm">
         Currently I'm a college student at{' '}
-        <b className="margin--none">
+        <b 
+//       className="margin--none"
+      >
           <Link to="https://itats.ac.id/">
             Institut Teknologi Adhi Tama Surabaya
           </a>
