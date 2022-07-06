@@ -22,7 +22,7 @@ const profiles = [
       >
           <Link to="https://itats.ac.id/">
             Institut Teknologi Adhi Tama Surabaya
-          </a>
+          </Link>
         </b>
       </p>
     ),

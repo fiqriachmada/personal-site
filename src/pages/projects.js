@@ -10,7 +10,7 @@ const features = [
     title: (
       <Link to="https://sys01.dwiprimasentosa.com/" target="blank">
         Dwi Prima Sentosa
-      </a>
+      </Link>
     ),
     imageUrl: 'img/smartone.svg',
     description: (
