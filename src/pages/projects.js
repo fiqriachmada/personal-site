@@ -8,6 +8,32 @@ import { Link } from 'react-router-dom';
 const features = [
   {
     title: (
+      <Link to="/" target="blank">
+        PT Sreeya Sewu Indonesia, Tbk
+      </Link>
+    ),
+    imageUrl: 'img/sreeya.jpeg',
+    description: (
+      <p>
+        WSUS Development
+      </p>
+    ),
+  },
+  {
+    title: (
+      <Link to="/" target="blank">
+        PT Bank Negara Indonesia, Tbk
+      </Link>
+    ),
+    imageUrl: 'img/bni.png',
+    description: (
+      <p>
+        SMS Banking
+      </p>
+    ),
+  },
+  {
+    title: (
       <Link to="https://sys01.dwiprimasentosa.com/" target="blank">
         Dwi Prima Sentosa
       </Link>
