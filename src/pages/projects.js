@@ -1,42 +1,43 @@
-import React from 'react';
-import clsx from 'clsx';
-import Layout from '@theme/Layout';
-import useBaseUrl from '@docusaurus/useBaseUrl';
-import styles from './styles.module.css';
-import { Link } from 'react-router-dom';
+import React from 'react'
+import clsx from 'clsx'
+import Layout from '@theme/Layout'
+import useBaseUrl from '@docusaurus/useBaseUrl'
+import styles from './styles.module.css'
+import {Link} from 'react-router-dom'
 
 const features = [
   {
     title: (
-      <Link to="/" target="blank">
+      <a href='https://io2022-jakarta.web.app/' target='blank'>
+        Google IO Extended Jakarta 2022
+      </a>
+    ),
+    imageUrl: 'img/googleio.jpg',
+    description: <p>Google IO Extended Jakarta 2022</p>,
+  },
+  {
+    title: (
+      <a href='/' target='blank'>
         PT Sreeya Sewu Indonesia, Tbk
-      </Link>
+      </a>
     ),
     imageUrl: 'img/sreeya.jpeg',
-    description: (
-      <p>
-        WSUS Development
-      </p>
-    ),
+    description: <p>WSUS Development</p>,
   },
   {
     title: (
-      <Link to="/" target="blank">
+      <a href='/' target='blank'>
         PT Bank Negara Indonesia, Tbk
-      </Link>
+      </a>
     ),
     imageUrl: 'img/bni.png',
-    description: (
-      <p>
-        SMS Banking
-      </p>
-    ),
+    description: <p>SMS Banking</p>,
   },
   {
     title: (
-      <Link to="https://sys01.dwiprimasentosa.com/" target="blank">
+      <a href='https://sys01.dwiprimasentosa.com/' target='blank'>
         Dwi Prima Sentosa
-      </Link>
+      </a>
     ),
     imageUrl: 'img/smartone.svg',
     description: (
@@ -44,7 +45,7 @@ const features = [
         Merupakan sebuah dynamic site milik Dwi Prima Sentosa yang dikerjakan
         oleh Smart Nusantara yang dihostingkan oleh{' '}
         <code>
-          <a href="https://sys01.dwiprimasentosa.com/">Smartone</a>
+          <a href='https://sys01.dwiprimasentosa.com/'>Smartone</a>
         </code>
         {''}. Saya membantu sebagai developer.
       </p>
@@ -52,7 +53,7 @@ const features = [
   },
   {
     title: (
-      <a href="https://stupidsby.blogspot.com/" target="blank">
+      <a href='https://stupidsby.blogspot.com/' target='blank'>
         StupidSby
       </a>
     ),
@@ -62,7 +63,7 @@ const features = [
         Sebuah blog pribadi milik Achmada Fiqri yang dijalankan dan dihostingkan
         menggunakan{' '}
         <code>
-          <a href="http://blogspot.com/">Blogspot</a>
+          <a href='http://blogspot.com/'>Blogspot</a>
         </code>{' '}
         sejak 2014.
       </p>
@@ -70,7 +71,7 @@ const features = [
   },
   {
     title: (
-      <a href="https://atapponik.000webhostapp.com/landingpage/" target="blank">
+      <a href='https://atapponik.000webhostapp.com/landingpage/' target='blank'>
         Atapponik
       </a>
     ),
@@ -80,13 +81,13 @@ const features = [
       <p>
         Sebuah proyek freelance dari
         <code>
-          <a href="https://www.instagram.com/atapponik.id/">
+          <a href='https://www.instagram.com/atapponik.id/'>
             Atapponik Indonesia
           </a>
         </code>
         yang dikerjakan menggunakan Wordpress dihosting dengan menggunakan
         <code>
-          <a href="https://id.000webhost.com/">000Webhost</a>
+          <a href='https://id.000webhost.com/'>000Webhost</a>
         </code>
         .
       </p>
@@ -94,7 +95,7 @@ const features = [
   },
   {
     title: (
-      <a href="https://fiqriachmada.github.io/" target="blank">
+      <a href='https://fiqriachmada.github.io/' target='blank'>
         Personal Site
       </a>
     ),
@@ -103,47 +104,47 @@ const features = [
       <p>
         Sebuah personal site Achmada Fiqri yang dibuat menggunakan{' '}
         <code>
-          <a href="https://tailwindcss.com/">Tailwind CSS</a>
+          <a href='https://tailwindcss.com/'>Tailwind CSS</a>
         </code>{' '}
         yang dideploy menggunakan{' '}
         <code>
-          <a href="https://github.io/">GitHub Pages</a>
+          <a href='https://github.io/'>GitHub Pages</a>
         </code>
         .
       </p>
     ),
   },
-];
+]
 
-function Feature({imageUrl, title, description}) {
-  const imgUrl = useBaseUrl(imageUrl);
+function Feature ({imageUrl, title, description}) {
+  const imgUrl = useBaseUrl(imageUrl)
   return (
     <div className={clsx('col col--6')}>
-      <div className="card margin--md shadow--md">
+      <div className='card margin--md shadow--md'>
         {imgUrl && (
-          <div className="text--center">
+          <div className='text--center'>
             <img className={styles.featureImage} src={imgUrl} alt={title} />
           </div>
         )}
-        <div className="margin--md">
+        <div className='margin--md'>
           <h1>{title}</h1>
           {/* <p>{description}</p> */}
         </div>
       </div>
     </div>
-  );
+  )
 }
 
-function Projects() {
-  const judul = 'Projects';
+function Projects () {
+  const judul = 'Projects'
 
   return (
     <Layout title={judul}>
       <main>
         {features && features.length > 0 && (
           <section className={styles.features}>
-            <div className="container">
-              <div className="row">
+            <div className='container'>
+              <div className='row'>
                 {features.map(({title, imageUrl, description}) => (
                   <Feature
                     key={title}
@@ -158,10 +159,10 @@ function Projects() {
         )}
       </main>
     </Layout>
-  );
+  )
 }
 
-export default Projects;
+export default Projects
 
 {
   /* <header className={clsx('hero hero--primary', styles.heroBanner)} background="https://unsplash.com/photos/iixzyDCmM2A">
