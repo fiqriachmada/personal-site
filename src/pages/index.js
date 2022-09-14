@@ -10,9 +10,7 @@ const indexes = [
     title: <h1 className='index avatar avatar--vertical'>Hi! I'm Mada</h1>,
     p1: (
       <p className='p1 margin-left--sm margin-right--sm avatar avatar--vertical'>
-        Cloud Engineering Intern at PT Sreeya Sewu Tbk and Student at ITATS,
-        sometimes doing code, Mobile Legends and Basketball with ❤️. Currently
-        based on Surabaya, Indonesia
+        Front End Developer at PT Fresh Factory and Student at ITATS. Sometimes doing code, Mobile Legends and Basketball with ❤️. Currently based on Jakarta, Indonesia
       </p>
     ),
     p2: (
