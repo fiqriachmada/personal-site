@@ -11,7 +11,7 @@ const profiles = [
     p1: (
       <p className="margin-left--sm margin-right--sm">
         Hi There, <b>Achmada Fiqri A Rasyad</b> right here, or you can call me{' '}
-        <b>Mada</b> shortly
+        <code>Mada</code> shortly
       </p>
     ),
     p2: (
@@ -54,6 +54,7 @@ const profiles = [
         <p>Tailwind CSS{''}</p>
         <p>ReactJS{''}</p>
         <p>Docusaurus{''}</p>
+        <p>Flutter{''}</p>
       </div>
     ),
     backend: (
@@ -82,7 +83,8 @@ const profiles = [
     learning: (
       <div className="margin-left--sm margin-right--sm">
         <h1>Currently learning</h1>
-        <p>Flutter{''}</p>
+        <p>GetX{''}</p>
+        <p>BLoC{''}</p>
       </div>
     ),
   },
