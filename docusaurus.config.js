@@ -18,7 +18,7 @@ module.exports = {
   onBrokenLinks: 'throw',
   favicon: 'img/logo.svg',
   organizationName: 'fiqriachmada', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  projectName: 'personal-site', // Usually your repo name.
   themeConfig: {
     themeConfig: {
       colorMode: {
@@ -75,17 +75,6 @@ module.exports = {
           activeBaseRegex: 'about',
           position: 'right',
         },
-        // {
-        //   href: 'https://stupidsby.blogspot.com/',
-        //   label: 'Blog',
-        //   position: 'right',
-        // },
-        // Please keep GitHub link to the right for consistency.
-        // {
-        //   href: 'https://github.com/fiqriachmada/',
-        //   label: 'GitHub',
-        //   position: 'right',
-        // },
       ],
     },
 

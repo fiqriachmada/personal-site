@@ -3,7 +3,7 @@ import Layout from '@theme/Layout';
 import clsx from 'clsx';
 import styles from './styles.module.css';
 import useBaseUrl from '@docusaurus/useBaseUrl';
-import { Link } from 'react-router-dom';
+import {Link} from 'react-router-dom';
 
 const profiles = [
   {
@@ -17,9 +17,9 @@ const profiles = [
     p2: (
       <p className="margin-left--sm margin-right--sm">
         Currently I'm a college student at{' '}
-        <b 
-//       className="margin--none"
-      >
+        <b
+        //       className="margin--none"
+        >
           <Link to="https://itats.ac.id/">
             Institut Teknologi Adhi Tama Surabaya
           </Link>
@@ -105,7 +105,7 @@ function Profiles({
 }) {
   const imgUrl = useBaseUrl(imageUrl);
   return (
-    <div className={clsx('col col--12')}>
+    // <div className={clsx('col col--12')}>
       <div className="card margin--md shadow--md">
         {imgUrl && (
           <div className="text--center">
@@ -127,15 +127,15 @@ function Profiles({
           </div>
         </div>
       </div>
-    </div>
+    // </div>
   );
 }
 
 function About() {
-  const judul = 'About';
+  const title = 'About';
 
   return (
-    <Layout title={judul}>
+    <Layout title={title}>
       <main>
         {profiles && profiles.length > 0 && (
           <section className={styles.profiles}>

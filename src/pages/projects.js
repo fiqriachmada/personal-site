@@ -1,193 +1,41 @@
-import React from 'react'
-import clsx from 'clsx'
-import Layout from '@theme/Layout'
-import useBaseUrl from '@docusaurus/useBaseUrl'
-import styles from './styles.module.css'
-import {Link} from 'react-router-dom'
+import React from 'react';
+import clsx from 'clsx';
+import Layout from '@theme/Layout';
+import useBaseUrl from '@docusaurus/useBaseUrl';
+import styles from './styles.module.css';
+import featuresProject from './featuredProject';
 
-const features = [
-  {
-    title: (
-      <a href="https://FreshFactory.id/" target="blank">
-        Fresh Factory
-      </a>
-    ),
-    imageUrl: 'img/googleio.jpg',
-    description: <p>Fresh Factory</p>,
-  },
-  {
-    title: (
-      <a href="https://io2022-jakarta.web.app/" target="blank">
-        Google IO Extended Jakarta 2022
-      </a>
-    ),
-    imageUrl: 'img/googleio.jpg',
-    description: <p>Google IO Extended Jakarta 2022</p>,
-  },
-  {
-    title: (
-      <a href="/" target="blank">
-        PT Sreeya Sewu Indonesia, Tbk
-      </a>
-    ),
-    imageUrl: 'img/sreeya.jpeg',
-    description: <p>WSUS Development</p>,
-  },
-  {
-    title: (
-      <a href="/" target="blank">
-        PT Bank Negara Indonesia, Tbk
-      </a>
-    ),
-    imageUrl: 'img/bni.png',
-    description: <p>SMS Banking</p>,
-  },
-  {
-    title: (
-      <a href="https://sys01.dwiprimasentosa.com/" target="blank">
-        Dwi Prima Sentosa
-      </a>
-    ),
-    imageUrl: 'img/smartone.svg',
-    description: (
-      <p>
-        Merupakan sebuah dynamic site milik Dwi Prima Sentosa yang dikerjakan
-        oleh Smart Nusantara yang dihostingkan oleh{' '}
-        <code>
-          <a href="https://sys01.dwiprimasentosa.com/">Smartone</a>
-        </code>
-        {''}. Saya membantu sebagai developer.
-      </p>
-    ),
-  },
-  {
-    title: (
-      <a href="https://stupidsby.blogspot.com/" target="blank">
-        StupidSby
-      </a>
-    ),
-    imageUrl: 'img/stupidsby.svg',
-    description: (
-      <p>
-        Sebuah blog pribadi milik Achmada Fiqri yang dijalankan dan dihostingkan
-        menggunakan{' '}
-        <code>
-          <a href="http://blogspot.com/">Blogspot</a>
-        </code>{' '}
-        sejak 2014.
-      </p>
-    ),
-  },
-  {
-    title: (
-      <a href="https://atapponik.000webhostapp.com/landingpage/" target="blank">
-        Atapponik
-      </a>
-    ),
-    href: 'fb.com',
-    imageUrl: 'img/atapponik.svg',
-    description: (
-      <p>
-        Sebuah proyek freelance dari
-        <code>
-          <a href="https://www.instagram.com/atapponik.id/">
-            Atapponik Indonesia
-          </a>
-        </code>
-        yang dikerjakan menggunakan Wordpress dihosting dengan menggunakan
-        <code>
-          <a href="https://id.000webhost.com/">000Webhost</a>
-        </code>
-        .
-      </p>
-    ),
-  },
-  {
-    title: (
-      <a href="https://fiqriachmada.github.io/" target="blank">
-        Personal Site
-      </a>
-    ),
-    imageUrl: 'img/fiqriachmada.svg',
-    description: (
-      <p>
-        Sebuah personal site Achmada Fiqri yang dibuat menggunakan{' '}
-        <code>
-          <a href="https://tailwindcss.com/">Tailwind CSS</a>
-        </code>{' '}
-        yang dideploy menggunakan{' '}
-        <code>
-          <a href="https://github.io/">GitHub Pages</a>
-        </code>
-        .
-      </p>
-    ),
-  },
-];
-
-function Feature ({imageUrl, title, description}) {
-  const imgUrl = useBaseUrl(imageUrl)
-  return (
-    <div className={clsx('col col--6')}>
-      <div className='card margin--md shadow--md'>
-        {imgUrl && (
-          <div className='text--center'>
-            <img className={styles.featureImage} src={imgUrl} alt={title} />
-          </div>
-        )}
-        <div className='margin--md'>
-          <h1>{title}</h1>
-          {/* <p>{description}</p> */}
-        </div>
-      </div>
-    </div>
-  )
-}
-
-function Projects () {
-  const judul = 'Projects'
+function Projects() {
+  const title = 'Projects';
 
   return (
-    <Layout title={judul}>
-      <main>
-        {features && features.length > 0 && (
-          <section className={styles.features}>
-            <div className='container'>
-              <div className='row'>
-                {features.map(({title, imageUrl, description}) => (
-                  <Feature
-                    key={title}
-                    title={title}
-                    imageUrl={imageUrl}
-                    description={description}
-                  />
-                ))}
+    <Layout title={title}>
+      <div className="container">
+        <div className="row">
+          {featuresProject.map((featuresProject) => (
+            <div className="col col--6">
+              <div className="col-demo">
+                <div className="card shadow--md margin-top--md margin-bottom--md">
+                  <div>
+                    <img
+                      style={{
+                        height: '420px',
+                        objectFit: 'contain',
+                      }}
+                      src={featuresProject.imageUrl}
+                    />
+                  </div>
+                  <div className="margin--md">
+                    <a href={featuresProject.link}>{featuresProject.title}</a>
+                  </div>
+                </div>
               </div>
             </div>
-          </section>
-        )}
-      </main>
+          ))}
+        </div>
+      </div>
     </Layout>
-  )
+  );
 }
 
-export default Projects
-
-{
-  /* <header className={clsx('hero hero--primary', styles.heroBanner)} background="https://unsplash.com/photos/iixzyDCmM2A">
-   <div className="container">
-     <h1 className="hero__title">{siteConfig.title}</h1>
-     <p1 className="hero__subtitle">{siteConfig.tagline}</p1>
-     <div className={styles.buttons}>
-       <Link
-         className={clsx(
-           'button button--outline button--secondary button--lg',
-           styles.getStarted,
-         )}
-         to={useBaseUrl('docs/')}>
-         About Me
-       </Link>
-     </div>
-   </div>
- </header> */
-}
+export default Projects;
